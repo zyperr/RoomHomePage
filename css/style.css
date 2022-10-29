@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+    font-family: 'League Spartan', sans-serif;
+}
+body{
+    background: #333e;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    font-size: 1.2rem;
+}
+header nav ul li {
+    margin: 40px 30px 0 50px;
+}
+header a{
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: lowercase;
+}
+header a:hover{
+    border-bottom: 2px solid var(--color-white);
+    border-radius: 2px;
+    padding-bottom: 5px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows:47.9% 47.9% 47.9% 47.9%;
+}
+.hero__container{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.hero1{
+    grid-column: 1/3;
+    grid-row: 1/5;
+    width: 100%;
+    height: 100%;
+}
+.information__container{
+    background: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column wrap;
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+.title-container{
+    width: 45%;
+    margin-bottom: 1.5em;
+}
+.paragraph__container{
+    width: 65%;
+}
+.information__container__title{
+    font-weight: 700;
+    font-size: 3rem;
+    width: 100%;
+}
+.information__container__paragraph{
+    font-size: 1.4rem;
+    text-align: center;
+    opacity: 45%;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.shop_now__link{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--color-Black);
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.shop_now__link:hover{
+    opacity: 25%;
+}
+.arrow{
+    padding-left: 30px;
+}
+.container__buttons{
+    display: flex;
+    position: relative;
+    top: 21.4%;
+    right:17.5%;
+}
+.button{
+    padding: 40px;
+    background: var(--color-Black);
+    cursor: pointer;
+    border: none;
+}
+.button:hover{
+    opacity: 75%;
+}
+.container__about{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__about__title{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0 33px 20px 20px;
+}
+.container__paragraph{
+    display: flex;
+}
+.container__about__paragraph{
+    margin: 0 20px 10px 20px;
+    font-size: 1.2rem;
+    opacity: 45%;
+    width: 90%;
+}
+
+.about__dark{
+    background: url(/assets/images/image-about-dark.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about__ligth{
+    background: url(/assets/images/image-about-light.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero-mobile{
+    display: none;
+}
+.container__buttons2{
+    display: none;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.hamburger__close{
+    display: none;
+    cursor: pointer;
+}
+/*mobile responsive*/
+@media screen and (max-width:425px){
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    header nav ul li{
+        margin: 40px;
+    }
+    .logo{
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero1{
+        display: none;
+    }
+    .hero-mobile{
+        display: block;
+    }
+    .information__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .title-container{
+        width: 80%;
+        margin:30px 20px 20px 20px;
+    }
+    .paragraph__container{
+        width: 90%;
+        padding-left: 20px;
+        margin-right: 5px;
+    }
+    .information__container__title{
+        font-size: 2rem;
+        
+    }
+    .information__container__paragraph{
+        font-size: 1rem;
+        
+    }
+    .shop_now__link{
+        margin-bottom: 50px;
+        font-size: 1rem;
+    }
+    .container__buttons{
+        display: none;
+    }
+
+    .container__buttons2{
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .button2{
+        padding: 1rem 1.4rem;
+        background: var(--color-Black);
+        cursor: pointer;
+        border: none;
+    }
+    .button2:hover{
+        background: var(--color-very-dark-gray);
+    }
+    
+    .container__about__title{
+        font-size: 1.2rem;
+       margin-top: 30px;
+    }
+    .container__paragraph{
+        display: flex;
+    }
+    .container__about__paragraph{
+        font-size: 1rem;
+        opacity: 45%;
+        width: 100%;
+        height: 17vh;
+    }
+
+    .about__dark{
+        background: url(/assets/images/image-about-dark.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height:30vh;
+        width: 100vw;
+    }
+    .about__ligth{
+        background: url(/assets/images/image-about-light.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height:30vh;
+        width: 100vw;
+    }
+    .hamburger{
+        display: block;
+        position: fixed;
+        z-index: 1;
+        text-align: left;
+        margin: 30px;
+        padding-top: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    .hamburger .active .hamburger__close{
+        display: block;
+    }
+    .nav-menu{
+        font-size: 2rem;
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--color-Black);
+        text-align: center;
+        transition: all 0.3s;
+        height: 100vh;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}
+@media screen and (min-width:1024px){
+    .container__buttons{
+        top: 10.4%;
+        right: 17.5%;
+    }
+}
+@media screen and (min-width:1050px) {
+    .container__buttons{
+        top: 21.4%;
+        right:17.5%;;
+    }
+}
