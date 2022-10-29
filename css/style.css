@@ -136,12 +136,12 @@ header a:hover{
 }
 
 .about__dark{
-    background: url(/assets/images/image-about-dark.jpg) no-repeat;
+    background: url(assets/images/image-about-dark.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .about__ligth{
-    background: url(/assets/images/image-about-light.jpg) no-repeat;
+    background: url(assets/images/image-about-light.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
