@@ -8,7 +8,7 @@ const sliderContent = {
   title3: "Manufactured with the best materials",
   paragraph3:
     "Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.",
-  imgUrl3: "/assets/images/desktop-image-hero-3.jpg",
+  imgUrl3: "assets/images/desktop-image-hero-3.jpg",
   title1: "Discover innovative ways to decorate",
   paragraph1:
     "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.",
@@ -28,7 +28,6 @@ const btnLeftDesktop = document.querySelector("[data-button-left2]");
 const btnRightDesktop = document.querySelector("[data-button-right2]");
 
 const mediaQueryMobile = window.matchMedia("(max-width:375px;)");
-const mediaQueryDesktop = window.matchMedia("(min-width:1024px;)");
 
 const sliderMobile = () => {
   btnRightMobile.addEventListener("click", () => {
