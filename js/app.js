@@ -4,18 +4,18 @@ const sliderContent = {
   title2: "We are available all across the globe",
   paragraph2:
     "We are available all across the globe With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today. ",
-  imgUrl2: "/assets/images/desktop-image-hero-2.jpg",
+  imgUrl2: "../assets/images/desktop-image-hero-2.jpg",
   title3: "Manufactured with the best materials",
   paragraph3:
     "Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.",
-  imgUrl3: "/assets/images/desktop-image-hero-3.jpg",
+  imgUrl3: "../assets/images/desktop-image-hero-3.jpg",
   title1: "Discover innovative ways to decorate",
   paragraph1:
     "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.",
-  imgUrl1: "/assets/images/desktop-image-hero-1.jpg",
-  imgMobile1: "/assets/images/mobile-image-hero-1.jpg",
-  imgMobile2: "/assets/images/mobile-image-hero-2.jpg",
-  imgMobile3: "/assets/images/mobile-image-hero-3.jpg",
+  imgUrl1: "../assets/images/desktop-image-hero-1.jpg",
+  imgMobile1: "../assets/images/mobile-image-hero-1.jpg",
+  imgMobile2: "../assets/images/mobile-image-hero-2.jpg",
+  imgMobile3: "../assets/images/mobile-image-hero-3.jpg",
 };
 
 const contentImage = document.querySelector("[data-hero]");
